@@ -10,6 +10,7 @@ body.sombre{
     color: #f5f7fa;
 }
 
+
 .container-header{
     justify-content: space-around;
     display: flex;
@@ -127,6 +128,18 @@ body.sombre .text-logo{
     text-align: center;
 }
 
+.dark-mode-switch{
+    border:2px solid; 
+    width: 77px;
+    border-radius: 6px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 10px;
+    background-color: #f5f7fa;
+    color: #4caf4f;
+    border-color: #4caf4f;
+    text-align: center;
+}
 
 main{
     width: 1441px;
@@ -144,9 +157,6 @@ main{
     flex-direction: column;
     gap: 40px;
 }
-
-
-
 
 .hero-section{
     width: 1153px;
@@ -166,12 +176,15 @@ body.sombre .hero-section{
 .frame{
     width: 658px;
     height: 276px;
-    gap: 32px;
     display: flex;
     align-self: center;
     flex-direction: column;
     gap: 32px;
-
+}
+.top-text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .text-lessons{
@@ -183,7 +196,6 @@ body.sombre .hero-section{
     color: #4d4d4d;
     margin: 0%;
 }
-
 
 body.sombre .text-lessons{
     color:#f5f7fa;
@@ -206,7 +218,6 @@ body.sombre .text-where{
     color:#f5f7fa;
 }
 .button-register{
-    size: medium;
     border:0px solid; 
     max-width: 128px;
     max-height: 52px;
@@ -225,7 +236,7 @@ body.sombre .text-where{
 }
 
 .community{
-    width: 1440 px;
+    width: 1440px;
     height: 416px;
     display: flex;
     flex-direction: column;
@@ -276,15 +287,15 @@ body.sombre .comm p{
 }
 
 .case{
-
-
+    width: 235px;
+    height: auto;
     border-radius: 8px;
     padding-top: 24px;
     padding-right: 32px;
     padding-bottom: 24px;
     padding-left: 32px;
     background-color:white;
-    box-shadow: 0, 2#3a5e81;
+    box-shadow: 0px 2px 4px #ABBED133 ;
     text-align: center;
     gap: 8px;
 }
@@ -374,14 +385,13 @@ body.sombre .case p{
 
 .inside{
     width: 601px;
-    height: 184px;
+    height: auto;
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
 .inside h2{
-
     font-weight: 600;
     font-size: 36px;
     line-height: 44px;
@@ -393,10 +403,9 @@ body.sombre .inside h2{
 }
 
 .inside p {
-
     font-weight: 400;
     font-size: 14px;
-    line-height: 20 px;
+    line-height: 20px;
     color:#717171;
     margin: 0%;
 }
@@ -405,7 +414,6 @@ body.sombre .inside p{
 }
 
 .button-learn{
-    size: medium;
     border:0px solid; 
     max-width: 151px;
     max-height: 52px;
@@ -464,7 +472,6 @@ body.sombre .frame-footer h1{
 }
 
 .button-footer{
-    size: medium;
     border:0px solid; 
     max-width: 154px;
     max-height: 52px;
@@ -497,8 +504,78 @@ body.sombre .frame-footer h1{
 
 .big-footer p {
     font-weight: 400;
-    size: 14px;
+    font-size: 14px;
     line-height: 20px;
     color: #f5f7fa;
     margin: 0%;
+}
+
+@media (max-width: 968px) {
+    .container-header,
+    .hero-section,
+    .frame4,
+    .unlock,
+    .calendar
+    {
+        width: 668px;
+        height: auto;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    main,
+    .home,
+    .community,
+    .comm,
+    .corps,
+    footer{
+        width: 768px;
+        height: auto;
+    }
+    .container-header{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .logo-header{
+        align-self: flex-start;
+    }
+    .nav-header ul{
+        justify-content: space-between;
+        margin: 5px;
+    }
+    .login-header{
+        align-self:flex-end;
+    }
+    .hero-section{
+        flex-direction: column;
+        gap: 52px;
+    }
+    .inside,
+    .frame-unlock,
+    .frame-calendar{
+        width: auto;
+        height: auto;
+    }
+    .unlock img,
+    .calendar img{
+        width: 40%;
+        height: 40%;
+        align-self: center;
+    }
+    .hero-section img{
+        align-self: center;
+    }
+    .frame4{
+        flex-direction:column;
+        gap: 30px;
+        align-items: center;
+    }
+    .frame-footer{
+        width: 640px;
+        height: auto;
+    }
+    .frame-footer h1{
+        width: 474px;
+        height: auto;
+    }
 }
