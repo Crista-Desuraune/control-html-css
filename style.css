@@ -4,12 +4,14 @@ body{
     padding: 0;
     font-family: Inter, sans-serif;
 }
-
-body.sombre{
-    background-color: #4d4d4d;
+/*mode sombre du body*/
+body.sombre{ 
+    background-color: #4d4d4d; 
     color: #f5f7fa;
 }
 
+
+/* style du header*/
 .container-header{
     justify-content: space-around;
     display: flex;
@@ -22,7 +24,7 @@ body.sombre{
     gap: 145px;
     background-color: #f5f7fa;
 }
-
+/*mmode sombre du header*/
 body.sombre .container-header{
     background-color:#263238;
     color:#f5f7fa;
@@ -125,7 +127,7 @@ body.sombre .text-logo{
     line-height: 20px;
     text-align: center;
 }
-
+/* style du bouton sombre*/
 .dark-mode-switch{
     border:2px solid; 
     width: 77px;
@@ -147,7 +149,7 @@ main{
     flex-direction: column;
     gap: 42px;
 }
-
+/*style des éléments de la maquette*/
 .home{
     width: 1441px;
     height: 1055px;
@@ -173,7 +175,7 @@ body.sombre .hero-section{
     color:#f5f7fa;
 }
 
-.frame{
+.frame{ /*partie gauche*/
     width: 658px;
     height: 276px;
     display: flex;
@@ -182,7 +184,7 @@ body.sombre .hero-section{
     gap: 32px;
 }
 
-.top-text{
+.top-text{ /*texte sans le bouton*/
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -202,7 +204,7 @@ body.sombre .text-lessons{
     color:#f5f7fa;
 }
 
-.frame span{
+.frame span{ /*mettre en vert le "from 8 years"*/
     color: #4caf4f;
 }
 
@@ -238,7 +240,7 @@ body.sombre .text-where{
     text-align: center;
 }
 
-.community{
+.community{ /* parties textes + cards/cases*/
     width: 1440px;
     height: 416px;
     display: flex;
@@ -246,7 +248,7 @@ body.sombre .text-where{
     gap: 16px;
 }
 
-.comm{
+.comm{/* partie texte*/
     width: 1440px;
     height: 120px;
     display: flex;
@@ -282,7 +284,7 @@ body.sombre .comm p{
     color:#f5f7fa;
 }
 
-.frame4{
+.frame4{ /* partie qui regroupe les cases*/
     width: 1153px;
     height: 280px;
     justify-content: space-between;
@@ -310,7 +312,7 @@ body.sombre .case{
     background-color: #263238;
 }
 
-.top{
+.top{ /*textes des cases*/
     column-gap: 8px;
     align-items: center; 
     height: 144px;
@@ -349,7 +351,7 @@ body.sombre .case p{
     color:#f5f7fa;
     background-color: #263238;
 }
-
+/* seconde partie des elements de la maquette*/
 .corps{
     width: 1441px;
     height: 914.4px;
@@ -358,7 +360,7 @@ body.sombre .case p{
     gap: 48px;
 }
 
-.unlock{
+.unlock{ /* premiere rubrique*/
     display: flex;
     width: 1153px;
     height: 433px;
@@ -367,7 +369,7 @@ body.sombre .case p{
     padding-right: 144px;
 }
 
-.frame-unlock{
+.frame-unlock{ /* partie info(textes+boutons)*/
     width: 661px;
     height: 268px;
     display: flex;
@@ -376,7 +378,7 @@ body.sombre .case p{
     gap: 32px;
 }
 
-.calendar{
+.calendar{ /* deuxieme rubrique*/
     width: 1153px;
     height: 433.4px;
     justify-content: space-between;
@@ -385,7 +387,7 @@ body.sombre .case p{
     display: flex;
 }
 
-.frame-calendar{
+.frame-calendar{ /* partie info*/
     width: 661px;
     height: 308px;
     display: flex;
@@ -394,7 +396,7 @@ body.sombre .case p{
     gap: 32px;
 }
 
-.inside{
+.inside{ /* textes des parties info*/
     width: 601px;
     height: auto;
     display: flex;
@@ -443,7 +445,7 @@ body.sombre .inside p{
     line-height: 24px;
     text-align: center;
 }
-
+/* style du footer*/ 
 footer{
     width: 1440px;
     height: 554px;
@@ -523,7 +525,8 @@ body.sombre .frame-footer h1{
     margin: 0%;
 }
 
-@media (max-width: 968px) {
+/*mobil-first*/
+@media (max-width: 788px) {
     .container-header,
     .hero-section,
     .frame4,
