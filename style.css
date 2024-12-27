@@ -64,7 +64,6 @@ body.sombre .text-logo{
     list-style: none;
     margin: 0%;
     padding: 0%;
-    align-content: center;
 }
 
 .nav-header a{    
@@ -76,7 +75,6 @@ body.sombre .text-logo{
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
-    align-content: center;
 }
 
 .login-header{
